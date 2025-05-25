@@ -8,33 +8,9 @@
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
-    color: #fff;
-    background: #000;
+    color: #000; /* Black text */
+    background: #fff; /* White background */
 }
-
-/* Background image */
-.background {
-    background: url('images/bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-}
-
-/* Light overlay for dark background */
-.overlay {
-    background-color:rgba(255, 255, 255, 0.6); /* dark overlay */
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
-
 
 /* Main container */
 .container {
@@ -46,7 +22,8 @@ body, html {
 /* Header styling */
 header {
     text-align: center;
-    background-color: rgba(214, 40, 40, 0.9);
+    background-color: #d62828; /* Rich red */
+    color: #fff;
     padding: 1.5rem;
     border-radius: 10px;
     margin-bottom: 2rem;
@@ -62,7 +39,7 @@ nav a {
 /* Hero section */
 #hero {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #f9f9f9; /* Very light grey */
     padding: 2rem;
     border-radius: 10px;
     margin-bottom: 2rem;
@@ -71,7 +48,7 @@ nav a {
 /* About, Products, Contact */
 section {
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #f9f9f9;
     padding: 2rem;
     border-radius: 10px;
 }
@@ -81,41 +58,3 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.product-card {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 1rem;
-    border-radius: 8px;
-    width: 260px;
-    text-align: center;
-}
-
-.product-card img {
-    width: 100%;
-    border-radius: 6px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    font-size: 0.9rem;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .product-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container {
-        padding: 1rem;
-    }
-}
